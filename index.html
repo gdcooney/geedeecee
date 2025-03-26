@@ -1,32 +1,85 @@
-<div class="card" id="goal1">
-  <h2>💰 Earn $1 from the Internet</h2>
-  <p>Test your skills. Try, fail, learn, and cash in.</p>
-  <div class="status">Status: In Progress</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gee's Goals</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-<div class="card" id="goal2">
-  <h2>🌐 Get 100 Followers</h2>
-  <p>Build your presence. Be real, be consistent, be Gee.</p>
-  <div class="status">Status: 0 / 100</div>
-</div>
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.2s;
+    }
 
-<div class="card" id="goal3">
-  <h2>🧑‍🍳 Cook</h2>
-  <p>Learn Korean Fried Chicken in the Air Fryer</p>
-  <div class="status">Status: 0 / 100</div>
-</div>
+    .card:hover {
+      transform: scale(1.03);
+    }
 
-<div class="card" id="goal4">
-  <h2>😁 Get out there!</h2>
-  <p>Join a club, start a hobby, do a sport. Meet new people</p>
-  <div class="status">Status: 0 / 100</div>
-</div>
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
 
-<div class="card" id="goal5">
-  <h2>Read a book 📖</h2>
-  <p>1 book a month</p>
-  <div class="status">Status: 1 / 12</div>
-</div>
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
 
+    .status {
+      margin-top: 12px;
+      font-weight: bold;
+      color: #2c7be5;
+      background: #eaf1fe;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
 
-<!-- repeat with: goal-cook, goal-read, goal-hobby -->
+  <div class="card" id="goal1">
+    <h2>💰 Earn $1 from the Internet</h2>
+    <p>Test your skills. Try, fail, learn, and cash in.</p>
+    <div class="status">Status: In Progress</div>
+  </div>
+
+  <div class="card" id="goal2">
+    <h2>🌐 Get 100 Followers</h2>
+    <p>Build your presence. Be real, be consistent, be Gee.</p>
+    <div class="status">Status: 0 / 100</div>
+  </div>
+
+  <div class="card" id="goal3">
+    <h2>🧑‍🍳 Cook</h2>
+    <p>Learn Korean Fried Chicken in the Air Fryer</p>
+    <div class="status">Status: 0 / 100</div>
+  </div>
+
+  <div class="card" id="goal4">
+    <h2>😁 Get out there!</h2>
+    <p>Join a club, start a hobby, do a sport. Meet new people</p>
+    <div class="status">Status: 0 / 100</div>
+  </div>
+
+  <div class="card" id="goal5">
+    <h2>📖 Read a Book</h2>
+    <p>1 book a month</p>
+    <div class="status">Status: 1 / 12</div>
+  </div>
+
+</body>
+</html>
