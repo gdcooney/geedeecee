@@ -1,116 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gee's Dashboard</title>
-  <style>
-    :root {
-      --bg: #f4f4f4;
-      --text: #333;
-      --accent: #4caf50;
-      --card-bg: #fff;
-    }
+<div class="card" id="goal-earn">
+  <h2>💰 Earn $1 from the Internet</h2>
+  <p>Test your skills. Try, fail, learn, and cash in.</p>
+  <div class="status">Status: In Progress</div>
+</div>
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #121212;
-        --text: #f4f4f4;
-        --accent: #90ee90;
-        --card-bg: #1e1e1e;
-      }
-    }
+<div class="card" id="goal-followers">
+  <h2>🌐 Get 100 Followers</h2>
+  <p>Build your presence. Be real, be consistent, be Gee.</p>
+  <div class="status">Status: 0 / 100</div>
+</div>
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: var(--accent);
-      margin-bottom: 2rem;
-    }
-
-    .grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border-left: 6px solid var(--accent);
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .card h2 {
-      font-size: 1.4rem;
-      margin-top: 0;
-    }
-
-    .status {
-      margin-top: 1rem;
-      font-style: italic;
-      color: var(--accent);
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      text-align: center;
-      opacity: 0.6;
-    }
-  </style>
-</head>
-<body>
-  <h1>Gee's Dashboard</h1>
-  <div class="subtitle">Simple goals. Real progress. 🔥</div>
-
-  <div class="grid">
-    <div class="card">
-      <h2>💰 Earn $1 from the Internet</h2>
-      <p>Test your skills. Try, fail, learn, and cash in.</p>
-      <div class="status">Status: In Progress</div>
-    </div>
-
-    <div class="card">
-      <h2>🌐 Get 100 Followers</h2>
-      <p>Build your presence. Be real, be consistent, be Gee.</p>
-      <div class="status">Status: 0 / 100</div>
-    </div>
-
-    <div class="card">
-      <h2>🍳 Learn a New Dish</h2>
-      <p>Explore a new recipe. Make something delicious and post it.</p>
-      <div class="status">Status: Not started</div>
-    </div>
-
-    <div class="card">
-      <h2>📚 Read a Book</h2>
-      <p>Find a story, learn something new, or escape into fiction.</p>
-      <div class="status">Status: Pick a book!</div>
-    </div>
-
-    <div class="card">
-      <h2>⚽ Find a Social Hobby</h2>
-      <p>Try a team sport, a meetup, or join a local group.</p>
-      <div class="status">Status: Researching ideas</div>
-    </div>
-  </div>
-
-  <footer>
-    Made by Gee. Updated <script>document.write(new Date().toLocaleDateString())</script>.
-  </footer>
-</body>
-</html>
+<!-- repeat with: goal-cook, goal-read, goal-hobby -->
